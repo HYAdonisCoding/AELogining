@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		229A776B3C7BCF38BE803924 /* Pods-AELogining_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AELogining_Example.debug.xcconfig"; path = "Target Support Files/Pods-AELogining_Example/Pods-AELogining_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2F589005A3223B15290C2403 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2F589005A3223B15290C2403 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AELogining_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AELogining_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,12 +60,12 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A66EF7013A59E880917F113 /* Pods-AELogining_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AELogining_Example.release.xcconfig"; path = "Target Support Files/Pods-AELogining_Example/Pods-AELogining_Example.release.xcconfig"; sourceTree = "<group>"; };
-		7CE5D977157A45272909F60E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7CE5D977157A45272909F60E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FF20FE83AF38BA6FB48CD43 /* Pods-AELogining_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AELogining_Tests.release.xcconfig"; path = "Target Support Files/Pods-AELogining_Tests/Pods-AELogining_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C4347FE64D68FC84B2D66251 /* Pods_AELogining_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AELogining_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83C91B417ACBCE45E383E02 /* Pods_AELogining_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AELogining_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F174F65AEC78D6E71052DC76 /* AELogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AELogining.podspec; path = ../AELogining.podspec; sourceTree = "<group>"; };
+		F174F65AEC78D6E71052DC76 /* AELogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AELogining.podspec; path = ../AELogining.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F49FFA124C26765BCB3178F0 /* Pods-AELogining_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AELogining_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AELogining_Tests/Pods-AELogining_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				F49FFA124C26765BCB3178F0 /* Pods-AELogining_Tests.debug.xcconfig */,
 				8FF20FE83AF38BA6FB48CD43 /* Pods-AELogining_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +303,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AELogining_Example/Pods-AELogining_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEAnimations/AEAnimations.framework",
 				"${BUILT_PRODUCTS_DIR}/AELogining/AELogining.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEAnimations.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AELogining.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

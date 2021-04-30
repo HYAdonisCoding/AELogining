@@ -1,0 +1,33 @@
+PODS:
+  - AEAnimations (0.1.0)
+  - AELogining (0.1.0):
+    - AEAnimations
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - AEAnimations (from `../../AEAnimations`)
+  - AELogining (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  AEAnimations:
+    :path: "../../AEAnimations"
+  AELogining:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AEAnimations: 1f36937bbe3b20cfd32626ef9c49b29a00bf74b1
+  AELogining: 41a5453160411aa64293e32ace2e8f9f598b2e4a
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: b04613f7e188f40a8308654e9f7dad98869702b5
+
+COCOAPODS: 1.10.0

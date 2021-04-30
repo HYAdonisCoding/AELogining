@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'AELogining_Example' do
   pod 'AELogining', :path => '../'
+  pod 'AEAnimations', :path => '../../AEAnimations'
 
   target 'AELogining_Tests' do
     inherit! :search_paths
